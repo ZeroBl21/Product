@@ -1,0 +1,256 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+/*Nav Bar*/
+
+header {
+  position: fixed;
+  top: 0.125em;
+  min-height: 4.688em;
+  padding: 0 1.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: #282828;
+  width: 100vw;
+  box-shadow: 0.625em 0.625em 0.875em #000;
+}
+
+#logo{
+  max-width: 5.188em;
+  filter: invert(90%);
+}
+
+
+#nav-bar li{
+  display: flex;
+  float: left;
+  height:  4.688em;
+  padding: 1.5em 3.688em; 
+  transition: 0.3s;
+}
+
+
+
+#nav-bar li:hover{
+  background-color: #0d437a;
+}
+
+#nav-link{
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Body and Main*/
+
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: #212121;
+  color: #bdbdbd;
+}
+
+main{
+  margin-top: 7.813em
+}
+
+section{
+  padding-top: 100px;
+}
+
+/*Form*/
+
+#form{
+  text-align: center;
+  margin: 3em;
+}
+
+#form-email{
+  max-width: 17.188em;
+  width: 100%;
+  padding: 0.313em;
+}
+
+#form-submit{
+  max-width: 9.375em;
+  width: 100%;
+  height: 2em;
+  margin: 0.938em 0;
+  border: none;
+  background-color: #0d437a;
+  color: #bdbdbd;
+}
+
+
+/*Section Caracteristicas*/
+
+#Caracteristicas{
+  margin: 1em 10em;
+  padding: 2em;
+  border-radius: 0.5em;
+  background-color: #2e2e2e;
+}
+
+#art{
+  display: flex;
+  margin-bottom: 2em; 
+  justify-content: center;
+}
+
+#art-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 128px;
+  width: 128px;
+  margin: 0 2em;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#art-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+}
+
+
+/*Section Caracteristicas*/
+
+#Funcion{
+  text-align: center;
+  margin: 4em; 
+}
+
+
+/*Section Precio*/
+
+#Precio{
+  margin: 90px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#pre-art{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 4);
+  margin: 30px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  overflow: hidden;
+  min-width: 300px
+}
+
+#pre-title{
+  background-color: #bbb;
+  color: #000; 
+  height: 2.2em;
+  padding-top: 0.5em;
+  font-size: 1.4em;
+}
+
+#pre-desc{
+  height: 14em;
+  padding: 2em 3em;
+}
+
+#pre
+{
+  margin: 2em 2em 0.8em 2em;
+  font-size: 1.6em;
+}
+
+#pre-btn{
+  max-width: 9.375em;
+  width: 100%;
+  border-radius: 0.4em; 
+  height: 2em;
+  margin: 0.938em 0;
+  border: none;
+  background-color: #0d437a;
+  color: #bdbdbd;
+}
+
+footer
+{
+  text-align: center;
+  padding: 1.4em;
+  background-color: #282828
+}
+
+footer > ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul li{
+  margin: 0 1em 
+}
+
+
+
+
+/*Responsive Design*/
+
+@media (max-width: 768px)
+{
+    *{
+        font-size: 12px;
+    }
+    
+  
+  main
+  {
+    margin-top: 15em;
+  }
+  
+  header{
+    flex-direction: column;
+  }  
+  
+  
+  
+  #nav-bar li{  
+      margin: 0.7em 0;
+      height: 40px;
+      float: none;
+  }
+  
+  
+    #Caracteristicas{
+      margin: 1em 1em;
+      padding: 2em;
+  }
+  
+    #art{
+    flex-direction: column;
+  }
+    
+    #art-icon{
+      
+      height: 7.813em;
+      width: 40%;
+      align-self: center;
+      justify-content: center;
+      margin: 2em 1em 0 1em;
+  }
+  
+  #art-text{
+    margin: 2em auto;
+    align-items: center;
+    width: 90%
+  }
+  
+  #art-desc{
+    text-align: center;
+  }
+  
+  #video{
+    width: 100%;
+  }
+}
